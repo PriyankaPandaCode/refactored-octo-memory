@@ -1,0 +1,17 @@
+secret = "panda"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_limit = False
+
+while secret != guess and not(out_of_limit):
+    if guess_count < guess_limit:
+        guess = input("Enter guess: ")
+        guess_count += 1
+    else:
+        out_of_limit = True 
+    
+if out_of_limit:
+    print("Out of limit, you lost!")
+else:
+    print("You won!")
